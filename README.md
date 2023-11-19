@@ -10,7 +10,7 @@
 
 데이터 전처리 &rarr; 데이터 분석 &rarr; 결과 도출 / 시각화 / 데이터 스토리텔링
 
-### Data Set
+## Data Set
 
 |resume(이력서)|설명| 
 |------|---|
@@ -43,5 +43,5 @@
 |resume_seq|이력서번호|
 |recruitment_seq|공고번호|
 
-### Data Preprocessing
+## Data Preprocessing
 
