@@ -8,4 +8,4 @@
 
 ## Environment & Technology
 
-![](<img src="https://img.shields.io/badge/TypeScript-F9AB00?style=flat&logo=googlecolab&logoColor=white"/> )
+![](<img src="https://img.shields.io/badge/React-61DAFB?style=flat&logo=React&logoColor=white"/>)
