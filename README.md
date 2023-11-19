@@ -33,12 +33,15 @@
 |qualifications|자격요건난이도|
 |text_keyword|모집직무키워드|
 
-|company(회사)|설명| 
+|company(회사)|설명| 
 |------|---|
 |recruitment_seq|공고번호|
 |employee|종업원수|
 
-|apply_train(지원이력)|설명| 
+|apply_train(지원이력)|설명| 
 |------|---|
 |resume_seq|이력서번호|
 |recruitment_seq|공고번호|
+
+### Data Preprocessing
+
