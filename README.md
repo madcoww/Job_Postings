@@ -47,3 +47,52 @@
 
 ## Data Preprocessing
 
+> hope_salary(희망연봉)데이터 0 &rarr; 평균
+~~~py
+# 희망 연봉에 대한 데이터가 존재하지 않거나, 0 인경우 NaN 으로 변경한 뒤 평균 값으로 치환
+resume_df_ex['hope_salary'].replace(0.0, np.nan, inplace=True)
+
+hope_salary_mean = resume_df_ex['hope_salary'].mean()
+
+resume_df_ex['hope_salary'].fillna(hope_salary_mean, inplace=True)
+
+print('희망 연봉 평균 : ',hope_salary_mean)
+print(resume_df_ex.head())
+~~~
+
+> 데이터 정규화 Min-Max Scaling
+~~~py
+# 각 열의 최소값과 범위 계산
+min_address = recruitment_df_ex['address_seq1'].min()
+range_address = recruitment_df_ex['address_seq1'].max() - min_address
+
+min_education = recruitment_df_ex['education'].min()
+range_education = recruitment_df_ex['education'].max() - min_education
+
+min_major_task = recruitment_df_ex['major_task'].min()
+range_major_task = recruitment_df_ex['major_task'].max() - min_major_task
+
+min_qualifications = recruitment_df_ex['qualifications'].min()
+range_qualifications = recruitment_df_ex['qualifications'].max() - min_qualifications
+
+# 각 열을 정규화
+recruitment_df_ex['address_seq1'] = (recruitment_df_ex['address_seq1'] - min_address) / range_address
+recruitment_df_ex['education'] = (recruitment_df_ex['education'] - min_education) / range_education
+recruitment_df_ex['major_task'] = (recruitment_df_ex['major_task'] - min_major_task) / range_major_task
+recruitment_df_ex['qualifications'] = (recruitment_df_ex['qualifications'] - min_qualifications) / range_qualifications
+~~~
+
+> check_box_keyword(모집직무코드) TF-IDF
+~~~py
+check_box_keyword_df = recruitment_df[['recruitment_seq','check_box_keyword']]
+
+check_box_keyword_df.set_index(['recruitment_seq'], inplace=True)
+
+# TF-IDF 벡터화
+tfidf_vectorizer = TfidfVectorizer()
+
+tfidf_matrix = tfidf_vectorizer.fit_transform(check_box_keyword_df['check_box_keyword'])
+
+tfidf_check_box_keyword = pd.DataFrame(tfidf_matrix.toarray(), index=check_box_keyword_df.index)
+~~~
+
