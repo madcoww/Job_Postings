@@ -96,3 +96,19 @@ tfidf_matrix = tfidf_vectorizer.fit_transform(check_box_keyword_df['check_box_ke
 tfidf_check_box_keyword = pd.DataFrame(tfidf_matrix.toarray(), index=check_box_keyword_df.index)
 ~~~
 
+## Data Visualization
+
+> hope_salary(희망 연봉)
+0을 제외한 데이터 확인
+
+> job_coed_seq1(희망 직무)
+
+> career_month(경력 월)
+
+## Data Storytelling
+
+> career_month(경력 월)이 높을 수록 hope_salary(희망 연봉)가 높은가?
+
+> check_box_keyword(모집직무코드)가 많을 수록 employee(종업원 수, 규모)가 클까?
+
+> graduate_date(졸업연도), degree(최종학력), career_month(경력 월), last_salary(최종연봉), hope_salary9희망연봉)은 어떤 상관관계를 가지고 있을까?
