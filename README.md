@@ -111,4 +111,4 @@ tfidf_check_box_keyword = pd.DataFrame(tfidf_matrix.toarray(), index=check_box_k
 
 > check_box_keyword(모집직무코드)가 많을 수록 employee(종업원 수, 규모)가 클까?
 
-> graduate_date(졸업연도), degree(최종학력), career_month(경력 월), last_salary(최종연봉), hope_salary9희망연봉)은 어떤 상관관계를 가지고 있을까?
+> graduate_date(졸업연도), degree(최종학력), career_month(경력 월), last_salary(최종연봉), hope_salary(희망연봉)은 어떤 상관관계를 가지고 있을까?
