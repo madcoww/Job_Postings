@@ -95,8 +95,9 @@ tfidf_matrix = tfidf_vectorizer.fit_transform(check_box_keyword_df['check_box_ke
 
 tfidf_check_box_keyword = pd.DataFrame(tfidf_matrix.toarray(), index=check_box_keyword_df.index)
 ~~~
+## Project Summary
 
-## Data Visualization
+### Data Visualization
 
 > hope_salary(희망 연봉)
 0을 제외한 데이터 확인
@@ -105,7 +106,7 @@ tfidf_check_box_keyword = pd.DataFrame(tfidf_matrix.toarray(), index=check_box_k
 
 > career_month(경력 월)
 
-## Data Storytelling
+### Data Storytelling
 
 > career_month(경력 월)이 높을 수록 hope_salary(희망 연봉)가 높은가?
 
