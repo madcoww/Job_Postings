@@ -102,14 +102,38 @@ tfidf_check_box_keyword = pd.DataFrame(tfidf_matrix.toarray(), index=check_box_k
 > hope_salary(희망 연봉)
 0을 제외한 데이터 확인
 
+
+![hope_salary](https://user-images.githubusercontent.com/74662313/284816548-8a5393c4-eef4-44b4-afcd-44b5090e0df5.png)
+
+
 > job_coed_seq1(희망 직무)
 
+
+![job_coed_seq1](https://user-images.githubusercontent.com/74662313/284816553-09c9b907-6fc3-4962-a76c-f98916f53751.png)
+
+
 > career_month(경력 월)
+
+
+![career_month](https://user-images.githubusercontent.com/74662313/284816534-28744702-0873-4ad9-ad3f-4aec49fa0d92.png)
+
 
 ### Data Storytelling
 
 > career_month(경력 월)이 높을 수록 hope_salary(희망 연봉)가 높은가?
 
+
+![career_month_hope_salary](https://user-images.githubusercontent.com/74662313/284816519-5748b086-d40d-48ad-aafe-bdc338885232.png)
+
+
 > check_box_keyword(모집직무코드)가 많을 수록 employee(종업원 수, 규모)가 클까?
 
+
+![check_box_keyword_employee](https://user-images.githubusercontent.com/74662313/284816540-db00300a-6965-481f-b92c-9a58acb4c5a5.png)
+
+
 > graduate_date(졸업연도), degree(최종학력), career_month(경력 월), last_salary(최종연봉), hope_salary(희망연봉)은 어떤 상관관계를 가지고 있을까?
+
+
+![corr](https://user-images.githubusercontent.com/74662313/284816544-86d87973-60a9-4aca-8fac-b09a9107f7e7.png)
+
