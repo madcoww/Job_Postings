@@ -23,7 +23,6 @@
 |hope_salary|희망연봉|
 |job_code_seq1|희망직무1|
 |career_month|경력월|
-|career_job_code|경력직무|
 
 |recruitment(구인공고)|설명| 
 |------|---|
