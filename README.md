@@ -1,4 +1,4 @@
-# BigData_Final
+# Job Postings
 
 > 이력서, 구인 공고, 지원 이력 데이터 등을 바탕으로 구인 공고 추천 알고리즘 개발
 
